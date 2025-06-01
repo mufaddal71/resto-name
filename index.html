@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Name Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Name Generator</h1>
+        <form method="POST">
+            <input type="text" name="cuisine" placeholder="e.g. Indian, Italian, Chinese" required>
+            <button type="submit">Generate Names</button>
+        </form>
+        {% if names %}
+            <h2>Suggestions:</h2>
+            <ul>
+                {% for name in names %}
+                    <li>{{ name }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
