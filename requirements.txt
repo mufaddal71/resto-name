@@ -1,5 +1,2 @@
 flask
 openai
-git add requirements.txt
-git commit -m "Add Flask and OpenAI to requirements"
-git push origin main
